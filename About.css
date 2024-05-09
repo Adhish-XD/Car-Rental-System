@@ -1,0 +1,32 @@
+.body{
+    background-color: azure;
+}
+.about{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+
+}
+.about-left{
+    flex-basis: 40%;
+}
+.about-right{
+    flex-basis: 56%;
+}
+.about-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about h3{
+    font-weight: 600;
+    font-weight: 16px;
+    color: #212EA0;
+}
+.about p{
+    color: #ffefef;
+    margin: 10px 0;
+    max-width: 400px;
+
+}
