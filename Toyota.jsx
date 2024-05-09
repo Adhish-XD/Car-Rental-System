@@ -1,15 +1,15 @@
 import React from 'react';
 import Axios from "axios";
 import { Link } from 'react-router-dom';
-import "./Maruti.css";
-import maruti from '../assets/Maruti.jpg';
+import "./Toyota.css";
+import toyota from '../assets/Toyota.jpg';
 
-const Maruti = () => {
+const Toyota = () => {
     return(
         <div className="sign-up-container1">
         <div className='container1'>
-        <img src={maruti} className='car1'/>
-        <h1>Maruti</h1>
+        <img src={toyota} className='car1'/>
+        <h1>Toyota</h1>
 
         <button><Link to={"/booking"}>Book</Link></button>
 
@@ -18,4 +18,4 @@ const Maruti = () => {
     );
 };
 
-export default Maruti;
+export default Toyota;

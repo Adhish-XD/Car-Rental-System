@@ -1,10 +1,10 @@
 import React from 'react';
-import "./LuxuryCar.css";
-import audi from '../assets/Audi.jpg'
-import bentley from '../assets/Bentley.jpg'
-import bmw from '../assets/BMW.jpg'
-import porsche from '../assets/Porsche.jpg'
+import "./RegularCar.css";
 import axios from 'axios';
+import scorpio from '../assets/Scorpio.jpg'
+import maruti from '../assets/Maruti.jpg'
+import toyota from '../assets/Toyota.jpg'
+import ford from '../assets/Ford.jpg'
 import { Link, useNavigate } from 'react-router-dom';
 function ProductList() {
 function search() {
@@ -25,31 +25,31 @@ return (
 <div className="container-fluid">
 <div className="container">
 <div className="search">
-<h1>Luxury Car</h1>
+<h1>Regular Cars</h1>
 <input type="text" name="" id="find" placeholder="search here...." onKeyUp={search} />
 
 </div>
 <div className="product-list">
 <div className="product">
 <div>
-<img src={audi} className='typesof'/>
-<h3>Audi</h3>
-<button><Link to="/audi">BOOK</Link></button>
+<img src={toyota} className='typesof'/>
+<h3>Toyota</h3>
+<button><Link to="/toyota">BOOK</Link></button>
 </div>
 <div>
-<img src={bmw} className='typesof'/>
-<h3>BMW</h3>
-<button><Link to="/bmw">BOOK</Link></button>
+<img src={maruti} className='typesof'/>
+<h3>Maruti</h3>
+<button><Link to="/maruti">BOOK</Link></button>
 </div>
 <div>
-<img src={porsche} className='typesof'/>
-<h3>Porsche</h3>
-<button><Link to="/porsche">BOOK</Link></button>
+<img src={ford} className='typesof'/>
+<h3>Ford</h3>
+<button><Link to="/ford">BOOK</Link></button>
 </div>
 <div>
-<img src={bentley} className='typesof'/>
-<h3>Bentley Continental GT</h3>
-<button><Link to="/bentley">BOOK</Link></button>
+<img src={scorpio} className='typesof'/>
+<h3>Scorpio</h3>
+<button><Link to="/scorpio">BOOK</Link></button>
 </div>
 </div>
 </div>
@@ -57,7 +57,7 @@ return (
 </div>
 );
 }
-function LuxuryCar() {
+function RegularCar() {
 const navigate = useNavigate();
 const handleLogout = () => {
 axios.defaults.withCredentials = true;
@@ -81,4 +81,4 @@ return (
 </div>
 );
 }
-export default LuxuryCar;
+export default RegularCar;

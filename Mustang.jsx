@@ -1,15 +1,15 @@
 import React from 'react';
 import Axios from "axios";
 import { Link } from 'react-router-dom';
-import "./Alfa.css";
-import alfa from '../assets/alfa.jpg';
+import "./Mustang.css";
+import mustang from '../assets/mustang.jpg';
 
-const Alfa = () => {
+const Mustang = () => {
     return(
         <div className="sign-up-container1">
         <div className='container1'>
-        <img src={alfa} className='car1'/>
-        <h1>Alfa Romeo</h1>
+        <img src={mustang} className='car1'/>
+        <h1>Ford Mustang</h1>
 
         <button><Link to={"/booking"}>Book</Link></button>
 
@@ -18,4 +18,4 @@ const Alfa = () => {
     );
 };
 
-export default Alfa;
+export default Mustang;
